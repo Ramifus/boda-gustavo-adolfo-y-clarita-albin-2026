@@ -13,6 +13,7 @@ import TarjetaRestriccion from "../components/TarjetaRestriccion.astro";
 import TarjetaProhibido from "../components/TarjetaProhibido.astro";
 import TarjetaConfirmar from "../components/TarjetaConfirmar.astro";
 import TarjetaDespedida from "../components/TarjetaDespedida.astro";
+import Versiculo from "../components/versiculo.astro";
 ---
 
 <Layout title="Boda">
@@ -22,7 +23,7 @@ import TarjetaDespedida from "../components/TarjetaDespedida.astro";
         <NombresFlores />
         <Dedicatoria />
 
-        <section class="relative pt-0 pb-28 overflow-hidden -mt-24">
+        <section class="relative pt-0 pb-28 overflow-hidden -mt-24 z-10">
             <div
                 class="relative mx-auto"
                 style="max-width:380px; padding: 0 10px;"
@@ -67,7 +68,7 @@ import TarjetaDespedida from "../components/TarjetaDespedida.astro";
                 <!-- 7. RESTRICCIÓN — derecha -->
                 <div
                     class="relative z-[7] w-[58%] ml-auto"
-                    style="margin-top: -35px;"
+                    style="margin-top: -20px;"
                 >
                     <TarjetaRestriccion />
                 </div>
@@ -95,7 +96,7 @@ import TarjetaDespedida from "../components/TarjetaDespedida.astro";
                     style="margin-top: -10px;"
                 >
                     <img
-                        src="/imagenes/foto3.png"
+                        src="/imagenes/foto5.png"
                         alt="Foto"
                         class="w-full object-contain drop-shadow-xl"
                     />
@@ -120,6 +121,14 @@ import TarjetaDespedida from "../components/TarjetaDespedida.astro";
                     style="margin-top: -60px;"
                 >
                     <TarjetaDespedida />
+                </div>
+
+                <!-- 13. VERSÍCULO — derecha -->
+                <div
+                    class="relative z-[13] w-[58%] ml-auto"
+                    style="margin-top: -60px;"
+                >
+                    <Versiculo />
                 </div>
             </div>
         </section>
